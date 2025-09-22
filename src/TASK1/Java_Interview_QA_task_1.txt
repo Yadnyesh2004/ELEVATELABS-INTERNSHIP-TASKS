@@ -1,0 +1,55 @@
+Java Interview Questions and Answers
+
+1. What is method overloading?
+Method overloading in Java is the ability to define multiple methods in the same class with the same name but different parameter lists. The parameters may differ in the number, type, or order of arguments. It is a type of compile-time polymorphism that improves code readability.
+
+2. How do you handle divide-by-zero?
+In Java, dividing an integer by zero throws an ArithmeticException. To handle this, we use try-catch blocks. Example:
+try {
+   int result = a / b;
+} catch (ArithmeticException e) {
+   System.out.println("Cannot divide by zero.");
+}
+This prevents the program from crashing.
+
+3. Difference between == and .equals()?
+- == checks if two references point to the same memory location (reference comparison).
+- .equals() is a method used to compare the content or values of objects. For example, in Strings, "abc".equals("abc") returns true.
+
+4. What are the basic data types in Java?
+Java has 8 primitive data types:
+- byte
+- short
+- int
+- long
+- float
+- double
+- char
+- boolean
+
+5. How is Scanner used for input?
+The Scanner class (in java.util package) is used to take input from the user. Example:
+Scanner sc = new Scanner(System.in);
+int num = sc.nextInt();
+String name = sc.nextLine();
+
+6. Explain the role of a loop.
+A loop allows repetitive execution of a block of code until a condition is met. Loops reduce redundancy and make code efficient. Common loops are for, while, and do-while loops.
+
+7. Difference between while and for loop?
+- while loop: Condition is checked first, and then the body is executed. Best for situations where the number of iterations is unknown.
+- for loop: Used when the number of iterations is known. Initialization, condition, and increment/decrement are written together.
+
+8. What is the JVM?
+JVM (Java Virtual Machine) is an abstract machine that executes Java bytecode. It converts bytecode into machine code for the underlying operating system. It provides portability, memory management, garbage collection, and security.
+
+9. How is Java platform-independent?
+Java is platform-independent because Java programs are compiled into bytecode, which can run on any system that has a JVM installed. This follows the principle "write once, run anywhere".
+
+10. How do you debug a Java program?
+To debug a Java program, developers use debugging tools in IDEs like Eclipse or IntelliJ. Common steps include:
+- Setting breakpoints
+- Running code in debug mode
+- Inspecting variables and call stack
+- Using System.out.println() for simple debugging
+This helps trace errors and fix bugs systematically.

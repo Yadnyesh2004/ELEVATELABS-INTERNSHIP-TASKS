@@ -1,3 +1,5 @@
+package TASK1;
+
 import java.util.Scanner;
 public class Task_1_Java_Console_Calculator {
 
