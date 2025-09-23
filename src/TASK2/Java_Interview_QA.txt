@@ -1,0 +1,52 @@
+Java Interview Questions and Answers
+
+1. What is encapsulation?
+Encapsulation is the process of wrapping data (variables) and methods (functions) into a single unit (class) and controlling access to them using access modifiers. 
+It protects data from unauthorized access. Example: Making fields private and providing getters and setters.
+
+2. How are ArrayLists different from arrays?
+- Array: Fixed size, stores primitive types and objects.
+- ArrayList: Dynamic size (automatically grows/shrinks), only stores objects, provides many built-in methods (add, remove, contains, etc.).
+
+3. How to sort an ArrayList?
+We can use Collections.sort().
+Example:
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);
+list.add(1);
+list.add(3);
+Collections.sort(list); // sorts in ascending order
+
+4. What is constructor overloading?
+Constructor overloading means having multiple constructors in the same class with different parameter lists.
+It allows creating objects in different ways.
+
+5. How does garbage collection work in Java?
+Java has an automatic garbage collector that removes unused objects from memory. 
+If an object no longer has any reference, it becomes eligible for garbage collection. 
+Developers can request garbage collection using System.gc(), but JVM decides when to run it.
+
+6. Why do we use getters and setters?
+- Getters: Retrieve the value of private fields.
+- Setters: Update the value of private fields.
+They help in encapsulation, ensuring controlled access and validation of data.
+
+7. What is a static variable?
+A static variable is shared among all objects of a class.
+Only one copy exists in memory, regardless of how many objects are created.
+
+8. What is the use of final keyword?
+- final variable → makes it constant (value cannot change).
+- final method → cannot be overridden.
+- final class → cannot be inherited.
+
+9. Difference between compile-time and runtime errors?
+- Compile-time error: Found by the compiler before the program runs (syntax error, missing semicolon).
+- Runtime error: Occurs while the program is running (divide by zero, null pointer exception).
+
+10. What are access modifiers?
+Access modifiers define scope/visibility of classes, methods, and variables:
+- public → accessible everywhere.
+- protected → accessible within package and subclasses.
+- default (no modifier) → accessible only within package.
+- private → accessible only within the same class.
